@@ -17,5 +17,5 @@ Nodejs:
 ```javascript
 let amqp = require("amqplib/callback_api");
 
-amqp.connect('amqp://admin:admin@0.0.0.0', function (error0, connection) {});
+amqp.connect('amqp://<user>:<pass>@0.0.0.0', function (error0, connection) {});
 ```
