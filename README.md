@@ -7,6 +7,8 @@ Run the rabbitmq docker-container :
 
 ## Connect to the broker.
 
+Before trying to connect from host to host, make sure to have created specific rules to the broker firewall.
+
 Rust :
 ```rust
 let uri = "amqp://admin:admin@192.168.1.83:5672";
@@ -19,3 +21,4 @@ let amqp = require("amqplib/callback_api");
 
 amqp.connect('amqp://<user>:<pass>@0.0.0.0', function (error0, connection) {});
 ```
+
