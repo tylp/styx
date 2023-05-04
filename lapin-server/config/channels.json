@@ -1,0 +1,42 @@
+{
+    "channels": {
+        "commands": {
+            "requests": {
+                "queueName": "req-commands",
+                "messages": {
+                    "stand": "req-stand",
+                    "crouch": "req-crouch",
+                    "forard": "req-forward",
+                    "backward": "req-backward",
+                    "left": "req-left",
+                    "right": "req-right"
+                }
+            },
+            "replies": {
+                "queueName": "rep-commands",
+                "messages": {
+                    "stand": "rep-stand",
+                    "crouch": "rep-crouch",
+                    "forard": "rep-forward",
+                    "backward": "rep-backward",
+                    "left": "rep-left",
+                    "right": "rep-right"
+                }
+            }
+        },
+        "monitoring": {
+            "requests": {
+                "queueName": "req-monitoring",
+                "messages": {
+                    "health": "req-health"
+                }
+            },
+            "replies": {
+                "queueName": "rep-monitoring",
+                "messages": {
+                    "health": "rep-health"
+                }
+            }
+        }
+    }
+}
