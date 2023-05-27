@@ -1,9 +1,6 @@
-import { Button, Grid, Paper, TextField, Typography } from '@mui/material';
-import { styled } from '@mui/material/styles';
-import MuiInput from '@mui/material/Input';
+'use client';
+
 import React, { useState } from 'react';
-import Box from '@mui/material/Box';
-import Slider from '@mui/material/Slider';
 
 function valuetext(value) {
     return `${value}°`;

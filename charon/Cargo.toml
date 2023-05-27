@@ -7,6 +7,7 @@ edition = "2021"
 
 [dependencies]
 anyhow = "1.0.71"
+cargo-watch = "8.4.0"
 gpio = "0.4.1"
 i2cdev = "0.5.1"
 lapin = "2.1.1"

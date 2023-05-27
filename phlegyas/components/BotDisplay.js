@@ -1,5 +1,5 @@
-import { Button, Grid, Paper, Typography } from '@mui/material';
-import { styled } from '@mui/material/styles';
+'use client';
+
 import React from 'react';
 import ServoController from './ServoController';
 

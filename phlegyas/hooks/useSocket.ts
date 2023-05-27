@@ -1,5 +1,6 @@
+import { ClientToServerEvents, ServerToClientEvents } from "@/interfaces/sockets";
 import { useEffect, useState } from "react";
-import io from "socket.io-client";
+import {io, Socket} from "socket.io-client";
 
 
 /**
@@ -9,11 +10,11 @@ import io from "socket.io-client";
  * @param {*} cb 
  * @returns WS instance
  */
-export default function useSocket(cb) {
-	const [socket, setSocket] = useState(null)
+export default function useSocket() {
+	const [socket, setSocket] = useState<Socket<ServerToClientEvents, ClientToServerEvents>>()
 
 	useEffect(() => {
-		const socketIo = io()
+		const socketIo: Socket<ServerToClientEvents, ClientToServerEvents> = io()
 
 		setSocket(socketIo)
 

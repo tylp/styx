@@ -36,7 +36,7 @@ async fn main() {
     let connection = Connection::connect(uri, options).await.unwrap();
     let channel = connection.create_channel().await.unwrap();
 
-	info!("Declaring channel...");
+    info!("Declaring channel...");
     let _queue = channel
         .queue_declare(
             "hello",
@@ -46,7 +46,7 @@ async fn main() {
         .await
         .unwrap();
 
-	info!("Publishing...");
+    info!("Publishing...");
     channel
         .basic_publish(
             "",

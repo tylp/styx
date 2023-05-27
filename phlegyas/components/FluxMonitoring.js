@@ -1,11 +1,10 @@
-import { Grid, Paper, Typography } from '@mui/material';
-import { styled } from '@mui/material/styles';
+'use client';
+
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { LineChart, Line, XAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import useSocket from '../../hooks/useSocket';
-import BlurOnIcon from '@mui/icons-material/BlurOn';
+import useSocket from '../hooks/useSocket';
 import { DateTime } from 'luxon';
-import useInterval from '../../hooks/useInterval';
+import useInterval from '../hooks/useInterval';
 
 const Root = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
